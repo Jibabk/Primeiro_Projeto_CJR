@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+/*colors and images */
+:root {
+	--button-collor: #28a745;
+	--dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, .6));
+	--text-color: #fff;
+	--input-border-color: #878584;
+	--footer-color: #e3e3e3;
+	--header-bg-image: url(img_bg_backoffice_usuario.jpg);
+} 
+
+* {
+	font-family: "Montserrat",sans-serif;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+	min-width: 590px;
+}
+
+/* header styles */
+header {
+	background-image: var(--dark-layer), var(--header-bg-image);
+	background-size: cover;
+	background-position: center;
+	height: 45vh;
+	color: var(--text-color);
+	box-sizing: border-box;
+	padding: 2% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+header a:hover {
+	color: #f79800;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.menuBox{
+	display: flex;
+	column-gap: 2rem;
+}
+
+
+
+
+
+.caminhos{
+	background-color: #343a40;
+	color: var(--text-color);
+	list-style-type: none;
+	min-height: 2rem;
+	display: flex;
+	align-items: center;
+	padding-left: 4%;
+}
+
+.caminho {
+	cursor: pointer;
+	padding: 1.1% 1.1%;
+	font-size: .7rem;
+	color: var(--text-color);
+
+
+}
+
+
+
+
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 1rem auto;
+	width: 80%;
+	min-height: 40vh;
+}
+
+table {
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #e9ecef;
+}
+
+
+th, td {
+  text-align: left;
+  width: 20rem;
+}
+
+th {
+  padding: 1rem;
+}
+
+td {
+  padding: 0.6rem 1rem;
+}
+
+
+
+.user_card{
+	vertical-align: top;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+/*buttons*/
+
+.action_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+  padding: 0.6rem 0;
+}
+
+
+
+.text_button {
+  font-weight: bold;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+}
+
+.edit_button {
+  color: #ffa207;
+}
+
+.delete_button {
+  color: #dc3545;
+}
+
+.edit_button:hover, .delete_button:hover {
+  color: #878584;
+}
+
+
+
+
+
+
+
+.pagination {
+  display: flex;
+  margin: 1rem auto;
+}
+
+.pagination button {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+footer{
+	background-color: var(--footer-color);
+	min-height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 4rem;
+}
